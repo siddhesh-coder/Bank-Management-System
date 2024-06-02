@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             messageElement.textContent = "";
             withdrawModal.style.display = "none";
         } else {
-            messageElement.textContent = "Invalid withdraw amount. Minimum amount is ₹500 or insufficient balance.";
+            alert("Invalid withdraw amount. Minimum amount is ₹500 or insufficient balance.");
         }
         withdrawForm.reset();
     });

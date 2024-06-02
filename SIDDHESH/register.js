@@ -37,3 +37,17 @@ document
     // localStorage.setItem('user', JSON.stringify(user));
     document.getElementById("registrationForm").reset();
   });
+
+  //Toggle between login and registration
+  document.getElementById('showLogin').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('registrationForm').style.display = 'none';
+    document.getElementById('loginForm').style.display = 'block';
+  });
+  
+  document.getElementById('showRegister').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('loginForm').style.display = 'none';
+    document.getElementById('registrationForm').style.display = 'block';
+  });
+  
